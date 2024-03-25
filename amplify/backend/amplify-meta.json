@@ -1,0 +1,80 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyreactapp-dev-143138-authRole",
+      "UnauthRoleArn": "arn:aws:iam::832293554159:role/amplify-amplifyreactapp-dev-143138-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::832293554159:role/amplify-amplifyreactapp-dev-143138-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-amplifyreactapp-dev-143138-deployment",
+      "UnauthRoleName": "amplify-amplifyreactapp-dev-143138-unauthRole",
+      "StackName": "amplify-amplifyreactapp-dev-143138",
+      "StackId": "arn:aws:cloudformation:eu-west-1:832293554159:stack/amplify-amplifyreactapp-dev-143138/5edc5c20-d4ab-11ee-bb92-0649f47f4255",
+      "AmplifyAppId": "d1en62ijy22wvq"
+    }
+  },
+  "auth": {
+    "amplifyreactappc6930da7": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyreactapp-dev-143138-deployment/amplify-cfn-templates/auth/amplifyreactappc6930da7-cloudformation-template.json",
+        "logicalId": "authamplifyreactappc6930da7"
+      },
+      "lastPushTimeStamp": "2024-02-26T15:42:46.776Z",
+      "output": {
+        "UserPoolId": "eu-west-1_mcUd9Olj6",
+        "AppClientIDWeb": "3dbdm1ldmsa9mesagbodfdkv9v",
+        "AppClientID": "5gjolk0e5cvacb3i5i8tm6ogv9",
+        "IdentityPoolId": "eu-west-1:767d461c-f2d1-4580-9aba-e40039c98dcc",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-west-1:832293554159:userpool/eu-west-1_mcUd9Olj6",
+        "IdentityPoolName": "amplifyreactappc6930da7_identitypool_c6930da7__dev",
+        "UserPoolName": "amplifyreactappc6930da7_userpool_c6930da7"
+      },
+      "lastPushDirHash": "MNCgcM+mtnQ4OEHBgdE7DlQGsjY="
+    }
+  },
+  "hosting": {
+    "S3AndCloudFront": {
+      "service": "S3AndCloudFront",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyreactapp-dev-143138-deployment/amplify-cfn-templates/hosting/template.json",
+        "logicalId": "hostingS3AndCloudFront"
+      },
+      "lastPushTimeStamp": "2024-02-26T15:42:46.785Z",
+      "output": {
+        "CloudFrontSecureURL": "https://d34eqto6j75bmy.cloudfront.net",
+        "S3BucketSecureURL": "https://amplifyreactapp-20240226163051-hostingbucket-dev.s3.amazonaws.com",
+        "CloudFrontOriginAccessIdentity": "EO5BLGESQMB3S",
+        "WebsiteURL": "http://amplifyreactapp-20240226163051-hostingbucket-dev.s3-website-eu-west-1.amazonaws.com",
+        "CloudFrontDistributionID": "E1MG98O9OXA5L8",
+        "Region": "eu-west-1",
+        "HostingBucketName": "amplifyreactapp-20240226163051-hostingbucket-dev",
+        "CloudFrontDomainName": "d34eqto6j75bmy.cloudfront.net"
+      },
+      "lastPushDirHash": "rctE9fRqglgt87LgtiiXvyH1q2c="
+    }
+  }
+}

@@ -157,7 +157,7 @@ function Tags() {
 
     return (
         <Container>
-            <h2 className="text-center">AWS Account Tag</h2>
+            <h2 className="text-center">Azure Account Tag</h2>
             <Button onClick={toggleFilters} style={{ marginBottom: '10px' }}>
                 {showFilters ? 'Hide Filters' : 'Show filters'}
             </Button>     
